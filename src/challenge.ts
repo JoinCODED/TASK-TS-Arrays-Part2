@@ -14,7 +14,9 @@
  */
 function secondHalfOfArrayIfItIsEven(fruits: string[]): string[] {
   // Your code here
-
+  if (fruits.length % 2 == 0) {
+    return fruits.slice(fruits.length / 2);
+  }
   return []; // replace empty array with what you see is fit
 }
 
@@ -34,8 +36,11 @@ function secondHalfOfArrayIfItIsEven(fruits: string[]): string[] {
  */
 function youGottaCalmDown(shout: string): string {
   // Your code here
-
-  return ""; // replace the empty string with what you see is fit
+  if (shout.includes("!")) {
+    return shout.slice(0, shout.indexOf("!") + 1);
+  } else {
+    return shout;
+  }
 }
 
 export { secondHalfOfArrayIfItIsEven, youGottaCalmDown };
