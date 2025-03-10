@@ -11,7 +11,7 @@
 
 function isArrayLengthOdd(numbers: number[]): boolean {
   // Your code here
-  return numbers.length % 2 !== 0 ? true : false; // replace false with what you see is fit
+  return numbers.length % 2 !== 0; // replace false with what you see is fit
 }
 
 /**
@@ -27,7 +27,7 @@ function isArrayLengthOdd(numbers: number[]): boolean {
 
 function isArrayLengthEven(numbers: number[]): boolean {
   // Your code here
-  return numbers.length % 2 === 0 ? true : false; // replace false with what you see is fit
+  return numbers.length % 2 === 0; // replace false with what you see is fit
 }
 
 /**
